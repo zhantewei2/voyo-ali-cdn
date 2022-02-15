@@ -4,10 +4,7 @@
   "description": "阿里云cdn sdk。 包含：预热、刷新等功能。",
   "main": "dist/cdn.js",
   "types": "dist/types/cdn.d.ts",
-  "scripts": {
-    "dev": "webpack --config webpack.config.js --env env=development",
-    "build": "webpack --config webpack.config.js --env env=production"
-  },
+  "scripts": {},
   "author": "zhantewei",
   "license": "ISC",
   "git": {},

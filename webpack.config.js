@@ -6,9 +6,10 @@ const {merge}=require("webpack-merge");
 
 
 module.exports=({env})=>{
+    const isBuild= env ==="production";
     const baseConfig={
       mode: "production",
-      watch: env==="development",
+      watch: !isBuild,
    
       target: "node",
       optimization: {
@@ -16,7 +17,10 @@ module.exports=({env})=>{
       },
       output:{
         filename: "[name].js",
-        library: "commonjs",
+        library:{
+          type:"commonjs"
+        },
+        clean: isBuild
       },
       module:{
         rules:[],
@@ -27,24 +31,14 @@ module.exports=({env})=>{
       resolve:{
         alias: {},
         extensions: [".ts",".js"]
-      },
-      plugins: [
-        new (require("copy-webpack-plugin"))({
-          patterns:[
-            {
-              from: join("project_pom/cdn.package.json"),
-              to: ""
-            }
-          ]
-        })
-      ]
+      }
     }
     
     const copyPlugin=require("copy-webpack-plugin");
     
     return [
       merge(baseConfig,{
-        
+
         entry:{
           "cdn": join("src/cdn/cdn.ts"),
         },
@@ -71,7 +65,7 @@ module.exports=({env})=>{
           new copyPlugin({
             patterns:[
               {
-                from: join("project_pom/oss.package.json"),
+                from: join("project_pom/cdn.package.json"),
                 to: "package.json"
               }
             ]

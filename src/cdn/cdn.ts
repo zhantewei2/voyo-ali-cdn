@@ -170,19 +170,4 @@ export class AliYoCDN extends CDN{
       ...params
     });
   }
-
 }
-
-//
-// const cdn=new AliYoCDN({
-//   cdnKey,
-//   cdnSecret
-// });
-//
-// cdn.describeQuota().then((result:any)=>{
-//   console.log(result)
-// })
-//
-// cdn.describeTasks({}).then((result:any)=>{
-//   console.log(result)
-// })

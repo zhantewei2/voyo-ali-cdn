@@ -2,12 +2,9 @@
   "name": "@voyo/ali-oss",
   "version": "1.0.1",
   "description": "阿里云oss sdk 封装",
-  "main": "dist/cdn.js",
-  "types": "dist/types/cdn.d.ts",
-  "scripts": {
-    "dev": "webpack --config webpack.config.js --env env=development",
-    "build": "webpack --config webpack.config.js --env env=production"
-  },
+  "main": "dist/oss.js",
+  "types": "dist/types/oss.d.ts",
+  "scripts": {},
   "author": "zhantewei",
   "license": "ISC",
   "git": {},
@@ -23,12 +20,12 @@
   },
   "dependencies": {
     "@ztwx/utils": "^1.10.4",
-    "ali-oss": "^6.17.1"
+    "ali-oss": "~6.17.1"
   },
   "keywords": [
     "aliyun",
-    "cdn",
-    "aliyuncdn",
-    "alicdn"
+    "oss",
+    "aliyunoss",
+    "alioss"
   ]
 }
