@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    "target": "es2020",                                  
+    "lib": [
+      "esnext"
+    ],
+    "experimentalDecorators": true,
+    "module": "commonjs",
+    "moduleResolution": "node",                      
+    "baseUrl": "./",
+    "types": [
+      "node",
+      "webpack-env"
+    ],
+    "declaration": true,
+    "outDir": "dist/cdn/types",
+    "allowJs": true,
+    "esModuleInterop": true,                     
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,                                  
+    "noImplicitAny": false,
+    "strictPropertyInitialization": false,
+    "skipLibCheck": true
+  },
+  "exclude": [
+    "node_modules",
+    "unpackage"
+  ],
+  "include": [
+    "src/cdn/**/*.ts",
+    "src/http.ts"
+  ]
+}
