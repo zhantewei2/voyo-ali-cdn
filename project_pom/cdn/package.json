@@ -1,6 +1,6 @@
 {
   "name": "@voyo/ali-cdn",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "阿里云cdn sdk。 包含：预热、刷新等功能。",
   "main": "cdn.js",
   "types": "types/cdn/cdn.d.ts",

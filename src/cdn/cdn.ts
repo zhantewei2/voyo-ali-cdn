@@ -101,7 +101,9 @@ class CDN{
 
 export class AliYoCDN extends CDN{
   combineUrl(url:string|string[]){
-    return url instanceof Array? url.join("\n"): url;
+    return url instanceof Array ? 
+      url.length>1?url.join("\n"):url
+      : url;
   }
 
   /**
@@ -109,6 +111,7 @@ export class AliYoCDN extends CDN{
    * @param url
    */
   refreshUrl(url:string|string[]){
+    console.log(this.combineUrl(url))
     return this.req("get",{
       Action: "RefreshObjectCaches",
       ObjectPath: this.combineUrl(url),

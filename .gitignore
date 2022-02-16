@@ -3,3 +3,7 @@ node_modules/
 .vs_code/
 dist/
 .DS_Store
+
+test-cdn.js
+test-oss.js
+test.js
