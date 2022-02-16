@@ -1,13 +1,16 @@
 {
-  "name": "@voyo/ali-oss",
+  "name": "@voyo/ali-cdn",
   "version": "1.0.1",
-  "description": "阿里云oss sdk 封装",
-  "main": "dist/oss.js",
-  "types": "dist/types/oss.d.ts",
+  "description": "阿里云cdn sdk。 包含：预热、刷新等功能。",
+  "main": "cdn.js",
+  "types": "types/cdn/cdn.d.ts",
   "scripts": {},
   "author": "zhantewei",
   "license": "ISC",
-  "git": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zhantewei2/voyo-ali-cdn"
+  },
   "devDependencies": {
     "@types/node": "^17.0.18",
     "copy-webpack-plugin": "^10.2.4",
@@ -19,13 +22,12 @@
     "webpack-node-externals": "^3.0.0"
   },
   "dependencies": {
-    "@ztwx/utils": "^1.10.4",
-    "ali-oss": "~6.17.1"
+    "@ztwx/utils": "^1.10.4"
   },
   "keywords": [
     "aliyun",
-    "oss",
-    "aliyunoss",
-    "alioss"
+    "cdn",
+    "aliyuncdn",
+    "alicdn"
   ]
 }

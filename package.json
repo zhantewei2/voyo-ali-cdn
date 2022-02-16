@@ -6,7 +6,9 @@
   "types": "dist/types/cdn.d.ts",
   "scripts": {
     "dev": "webpack --config webpack.config.js --env env=development",
-    "build": "webpack --config webpack.config.js --env env=production"
+    "build": "webpack --config webpack.config.js --env env=production",
+    "publish:cdn": "cd dist/cdn & npm publish --access public --workspace dist/cdn",
+    "publish:oss": "cd dist/oss & npm publish --access public --workspace dist/oss"
   },
   "author": "zhantewei",
   "license": "ISC",

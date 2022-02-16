@@ -1,6 +1,7 @@
 import {createHmac} from "crypto";
 import {getUniqueId, encodeQuery} from "@ztwx/utils";
 import {req} from "../http";
+export * from "../http";
 
 const CDN_SERVER= 'https://cdn.aliyuncs.com';
 

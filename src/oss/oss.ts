@@ -1,5 +1,6 @@
 import {AliOSS, AliYoOssCtor, PathType, PutDirOpts, PutFileType, PutOpts, PutResult} from "./types";
 import {putDir} from "./tool/putDir";
+export * from "../http";
 
 const OSS=require("ali-oss");
 

@@ -54,7 +54,7 @@ module.exports=({env})=>{
                   loader: "ts-loader",
                   options: {
                     context: __dirname,
-                    configFile: join("project_pom/cdn.tsconfig.json")
+                    configFile: join("project_pom/cdn/tsconfig.json")
                   }
                 }
               ]
@@ -65,9 +65,9 @@ module.exports=({env})=>{
           new copyPlugin({
             patterns:[
               {
-                from: join("project_pom/cdn.package.json"),
-                to: "package.json"
-              }
+                from: join("project_pom/cdn"),
+                to: ""
+              },
             ]
           })
         ]
@@ -89,7 +89,7 @@ module.exports=({env})=>{
                   loader: "ts-loader",
                   options: {
                     context: __dirname,
-                    configFile: join("project_pom/oss.tsconfig.json")
+                    configFile: join("project_pom/oss/tsconfig.json")
                   }
                 }
               ]
@@ -100,8 +100,8 @@ module.exports=({env})=>{
           new copyPlugin({
             patterns: [
               {
-                from :join("project_pom/oss.package.json"),
-                to: "package.json"
+                from :join("project_pom/oss"),
+                to: ""
               }
             ]
           })

@@ -1,9 +1,11 @@
-const {AliYoOSS} =require("../dist/oss/oss");
+const {AliYoOSS,req} =require("../dist/oss/oss");
 const path =require("path");
 
-//
 // const oss=new AliYoOSS({
-//
+//   accessKeyId: "",
+//   accessKeySecret:"",
+//   region: "",
+//   bucket: ""
 // })
 //
 // oss.putDir(
